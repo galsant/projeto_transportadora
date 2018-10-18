@@ -1,0 +1,28 @@
+Especificações técnicas:
+
+  IDE
+  - Eclipse Java com Maven plugin
+  - Microsoft Visual Code
+
+  Server
+  - Apache Tomcat 7
+  - Node.js
+
+  Linguagens
+  - Java 1.8
+  - Angular / CLI 6.x
+ 
+  Frameworks
+  - Spring Boot (Web, Jpa, Security)
+  
+Observações:
+
+O Projeto foi desenvolvido para acessar um banco alocado em memória no momento em que
+a aplicação SpringBoot é inicializada. Os artefatos para criação das tabelas estao em
+gustavo-transportes -> src/main/resources, 
+assim como o arquivo para configuração do datasource application.properties
+
+Utilizei o bootstrap para uma breve customização da página.
+
+
+  
