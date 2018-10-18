@@ -1,0 +1,11 @@
+#table {
+    background-image: linear-gradient(rgba(255,255,255,.8) 0%,rgba(255,255,255,.8) 50%), url("../assets/img/logistica-de-transporte.jpg");
+    background-repeat: none;
+    background-size: cover; 
+}
+.navbar {
+    min-height: 50px;
+}
+.card-body {
+    min-height: 300px;
+}

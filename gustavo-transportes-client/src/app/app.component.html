@@ -1,0 +1,35 @@
+
+<nav class="navbar navbar-dark bg-dark">
+</nav>
+<div class="container col-6">
+<div class="card">
+  <div id="table"  class="card-body">
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="input-group mb-2 col-7 form-group">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Rastrear</button>
+      </div>
+      <input formControlName="codObjeto" type="text" class="form-control" placeholder="Entre com 1020 ou 1030" aria-label="Example text with button addon" aria-describedby="button-addon1">
+    </div>
+  </form>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Data</th>
+          <th scope="col">Etapa</th>
+          <th scope="col">Local</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="retorno">
+        <tr *ngFor="let item of retorno">
+          <td>{{ item.data | date:'d/M/y h:mm:ss' }}</td>
+          <td>{{item.etapa}}</td>
+          <td>{{item.localidade}}</td>
+          <td>{{item.status}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
